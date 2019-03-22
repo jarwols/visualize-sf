@@ -7,7 +7,7 @@ var world = VIZI.world('world', {
 
 
 // Set position of sun in sky
-world._environment._skybox.setInclination(0.45);
+world._environment._skybox.setInclination(0.20);
 
 // Add controls
 VIZI.Controls.orbit().addTo(world);
@@ -19,7 +19,7 @@ VIZI.imageTileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}
 
 // Buildings from Mapzen
 VIZI.topoJSONTileLayer('https://vector.mapzen.com/osm/buildings/{z}/{x}/{y}.topojson?api_key=vector-tiles-NT5Emiw', {
-  interactive: false,
+  interactive: true,
   style: function(feature) {
     var height;
 
